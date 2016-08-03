@@ -1,0 +1,21 @@
+{
+  "datacenter": "localdatacenter",
+  "data_dir": "/Desktop/consul3",
+  "log_level": "INFO",
+  "node_name": "localserver3",
+  "skip_leave_on_interrupt": true,
+  "leave_on_terminate": true,
+  "server": true,
+  "bootstrap" : false,
+  "acl_datacenter": "localdatacenter",
+  "acl_master_token": "123456",
+  "acl_default_policy": "deny",
+  "ports" : {
+    "dns" : -1,
+    "http" : 9500,
+    "rpc" : 9400,
+    "serf_lan" : 9301,
+    "serf_wan" : 9302,
+    "server" : 9300
+  }
+}

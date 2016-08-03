@@ -1,0 +1,27 @@
+{
+  "datacenter": "localdatacenter",
+  "data_dir": "/Desktop/web",
+  "ui_dir":"/Desktop/web",
+  "log_level": "INFO",
+  "server": false,
+  "node_name": "client1",
+  "skip_leave_on_interrupt": true,
+  "leave_on_terminate": true,
+  "acl_datacenter": "localdatacenter",
+  "acl_master_token": "123456",
+  "acl_default_policy": "deny",
+  "ports" : {
+
+    "dns" : -1,
+    "http" : 8500,
+    "rpc" : 8400,
+    "serf_lan" : 8301,
+    "serf_wan" : 8302,
+    "server" : 8300
+  },
+  "start_join" : [
+    "127.0.0.1:9301",
+    "127.0.0.1:10301",
+    "127.0.0.1:11301"
+    ]
+}
